@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quote Rewriter</title>
+</head>
+<body>
+    <center>
+        <h1>Quote Rewriter</h1>
+        <h2>Enter quotes below, one at a time please!</h2>
+        <form action='javascript:writeData();'>
+            <input type='text' id='data' value='Quote'>
+            <input type='text' value='Discord Type'>
+            <input type='submit' value='Make my Discord cooler!'>
+        </form>
+    </center>
+    <script>
+        // Import Modules
+        const { readFileSync, writeFileSync } = require('fs');
+
+        // Write data to file
+        const writeData = () => {
+            let fileData = document.getElementById('data').value;
+            let fileName = 'C:\\Users\\User\\AppData\\Roaming\\Discord\\quotes.json';
+
+            let data = JSON.parse(readFileSync(fileName));
+            data.push(fileData);
+
+            writeFileSync(fileName, JSON.stringify(data));
+        };
+    </script>
+</body>
+</html>

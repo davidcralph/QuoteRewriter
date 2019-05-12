@@ -1,0 +1,9 @@
+{
+    "name": "quoterewriter",
+    "description": "Add your own Discord Updater quotes! No client mods required™",
+    "author": "ohlookitsderpy",
+    "license": "MIT",
+    "dependencies": {
+        "electron": "5.0.1"
+    }
+}
