@@ -1,3 +1,4 @@
+# DEPRECATED, USE https://github.com/combatneko/DiscordQuoteFactory
 # QuoteRewriter
 Add your own Discord Updater quotes! No client mods required™
 
