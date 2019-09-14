@@ -4,6 +4,6 @@
     "author": "ohlookitsderpy",
     "license": "MIT",
     "dependencies": {
-        "electron": "5.0.1"
+        "electron": "5.0.2"
     }
 }
